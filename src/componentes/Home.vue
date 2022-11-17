@@ -7,15 +7,15 @@
       <br>
       <h4> Caracteres: {{cantCaracteres}} </h4>
       <br>
-      <h4> {{valorCodificado}} </h4>
+      <h4> Texto codificado: {{valorCodificado}} </h4>
       <br>
-      <h4> {{valorMayus}} </h4>
+      <h4> Texto en mayusculas: {{valorMayus}} </h4>
       <br>
-      <h4> {{valorMinus}} </h4>
+      <h4> Texto en minusculas: {{valorMinus}} </h4>
       <br>
-      <h4> {{valorMinusMayus}} </h4>
+      <h4> Texto alterna m/M: {{valorMinusMayus}} </h4>
       <br>
-      <h4> {{valorMayusMinus}} </h4>
+      <h4> Texto alterna M/m: {{valorMayusMinus}} </h4>
       <br>
       
     </div>
