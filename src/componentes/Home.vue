@@ -5,6 +5,8 @@
       <input type="text" :value="textoIngresado" @input="actualizar($event)">
       <br>
       <br>
+      <h4> Caracteres: {{cantCaracteres}} </h4>
+      <br>
       <h4> {{valorCodificado}} </h4>
       <br>
       <h4> {{valorMayus}} </h4>
@@ -45,7 +47,8 @@
         valorMinus: "",
         valorMinusMayus: "",
         valorMayusMinus: "",
-        valorCodificado: ""
+        valorCodificado: "",
+        cantCaracteres: 0
       }
     },
     methods: {
@@ -57,6 +60,7 @@
             this.alternarMinusMayus()
             this.alternarMayusMinus()
             this.codificar()
+            this.contarCaracteres()
         },
         pasarAMayus() {	
           this.valorMayus = this.textoIngresado.toUpperCase()
@@ -132,6 +136,10 @@
         }
           this.valorCodificado = textoCodificado
           console.log('Codificar', this.valorCodificado)
+        },
+        contarCaracteres() {
+          this.cantCaracteres = this.textoIngresado.length
+          console.log('Contar caracteres', this.contarCaracteres)
         }
     },
     computed: {
